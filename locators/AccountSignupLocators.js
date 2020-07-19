@@ -1,5 +1,5 @@
 /**
- * These are the locators for the Login - Sign Up Tab page.
+ * These are the locators for the Login - Signup Tabs.
  *
  * @author Ashley Graf
  */

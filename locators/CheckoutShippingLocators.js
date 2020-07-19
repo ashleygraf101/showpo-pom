@@ -1,8 +1,12 @@
-'use strict';
-
+/**
+ * These are the locators for the Checkout Payment & Shipping pages.
+ *
+ * @author Ashley Graf
+ */
 var By = require('selenium-webdriver').By;
 
 module.exports = {
+// SHIPPING
   EMAIL_ADDRESS_FIELD: By.id('shippingEmaildefault'),
   FIRST_NAME_FIELD: By.id('shippingFirstNamedefault'),
   LAST_NAME_FIELD: By.id('shippingLastNamedefault'),

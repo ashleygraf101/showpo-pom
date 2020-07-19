@@ -1,11 +1,12 @@
 /**
- * These are the locators for the Student Discount Signup page.
+ * These are the locators for the Student Discount Signup pages.
  *
  * @author Ashley Graf
  */
 var By = require('selenium-webdriver').By;
 
 module.exports = {
+// SIGNUP
 // Email field
   EMAIL_FIELD: By.css('[aria-label="Email address"]'),
 // Confirm email field

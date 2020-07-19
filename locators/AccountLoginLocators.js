@@ -1,11 +1,12 @@
 /**
- * These are the locators for the Login - Login Tab page.
+ * These are the locators for the Login - Login Tabs.
  *
  * @author Ashley Graf
  */
 var By = require('selenium-webdriver').By;
 
 module.exports = {
+// LOGIN
   EMAIL_ADDRESS_FIELD: By.id('login-form-email'),
   PASSWORD_FIELD: By.css('login-form-password'),
   REMEMBER_ME_BUTTON: By.id('rememberMe'),

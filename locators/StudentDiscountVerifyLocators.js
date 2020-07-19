@@ -1,11 +1,12 @@
 /**
- * These are the locators for the Student Discount Verification page.
+ * These are the locators for the Student Discount Verify pages.
  *
  * @author Ashley Graf
  */
 var By = require('selenium-webdriver').By;
 
 module.exports = {
+// VERIFY
 // First name field
   FIRST_NAME_FIELD: By.id('AP_Wayf_txtFirstName'),
 // Last name field
