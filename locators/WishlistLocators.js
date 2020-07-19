@@ -1,5 +1,8 @@
-'use strict';
-
+/**
+ * These are the locators for the Wishlist page.
+ *
+ * @author Ashley Graf
+ */
 var By = require('selenium-webdriver').By;
 
 module.exports = {

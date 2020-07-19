@@ -3,10 +3,6 @@
  *
  * @author Ashley Graf
  */
-
-
-'use strict';
-
 var By = require('selenium-webdriver').By;
 
 module.exports = {

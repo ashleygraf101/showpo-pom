@@ -10,5 +10,5 @@ var By = require('selenium-webdriver').By;
 
 module.exports = {
   ADD_TO_CART_FIRST_AVAILABLE_SIZE_BUTTON: By.css('button[title="Add to bag"][1]'),
-  ADD_TO_CART_SINGLE_OPTION_BUTTON: By.class(".addToBagBtn"),
+  ADD_TO_CART_SINGLE_OPTION_BUTTON: By.css(".addToBagBtn"),
 };

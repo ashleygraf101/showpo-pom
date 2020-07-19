@@ -5,13 +5,12 @@
 * @author Ashley Graf
 */
 
-var BasePage = require('../lib/BasePage');
 var { describe, it, after, before } = require("selenium-webdriver/testing"),
   assert = require("assert");
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 var should = chai.should();
-var Account = require("../lib/pages/AccountLocators");
+var Account = require("../pages/AccountPage");
 chai.use(chaiAsPromised);
 var account_page;
 

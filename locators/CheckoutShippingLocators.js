@@ -12,7 +12,7 @@ module.exports = {
   CITY_FIELD: By.id('shippingAddressCitydefault'),
   ZIPCODE_FIELD: By.id('shippingZipCodedefault'),
   STATE_FIELD: By.id('shippingStatedefault'),
-  SUBMIT_SHIPPING_BUTTON: By.class('submit-shipping')
+  SUBMIT_SHIPPING_BUTTON: By.css('.submit-shipping')
   TWILIGHT_SHIPPING_OPTION: By.css('input[value="twilight"]')
   SATURDAY_SHIPPING_OPTION: By.css('input[value="saturday"]')
   TOMORROW_SHIPPING_OPTION: By.css('input[value="afternoon"]')
@@ -23,10 +23,7 @@ module.exports = {
 
 // Pick up near me email address
   PICK_UP_EMAIL_ADDRESS_FIELD: By.id('ccShippingEmaildefault'),
-
   PICK_UP_FIRST_NAME_FIELD: By.id('ccShippingFirstNamedefault')
-
   PICK_UP_LAST_NAME_FIELD: By.id('ccShippingLastNamedefault'),
-
   PICK_UP_PHONE_NUMBER: By.id('ccShippingPhoneNumber'),
 };
