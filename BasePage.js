@@ -8,6 +8,31 @@ var Chrome = require('selenium-webdriver/chrome');
 var Options = new.chrome.Options();
 
 var BasePage = function () {
+//unauth set up
+/** start webdriver
+
+//member set up
+/** start webdriver
+/** go to https://www.showpo.com/login/
+/** log in
+
+//student set up
+/** start webdriver
+/** go to https://www.showpo.com/student-discount.html
+/** log in
+
+//clean up
+/** clear cookies
+
+
+//member/student clean up
+/** log out
+/** clear cookies
+
+//teardown
+/** close webdriver
+/** quit webdriver
+  
   this.driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
     .setChromeOptions(Options)
