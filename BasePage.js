@@ -32,7 +32,7 @@ var BasePage = function () {
 //teardown
 /** close webdriver
 /** quit webdriver
-  
+*/ 
   this.driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
     .setChromeOptions(Options)
