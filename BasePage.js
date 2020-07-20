@@ -53,23 +53,23 @@ var BasePage = function () {
   };
 
   this.loginButton = function () {
-    return driver.findElement(By.css('a[href="/login/"]')); 
+    return driver.findElement(By.css('a[href="/login/"]')).click(); 
   }
 
   this.authedButton = function () {
-    return driver.findElement(By.css('a[href="/account/"]')); 
+    return driver.findElement(By.css('a[href="/account/"]')).click(); 
   }
 
   this.logoutLink = function () {
-    return driver.findElement(By.css('a.user-logout'));
+    return driver.findElement(By.css('a.user-logout')).click();
   }
 
   this.wishlistLink = function () {
-    return driver.findElement(By.css('a.miniwishlist-link'));
+    return driver.findElement(By.css('a.miniwishlist-link')).click();
   }
 
   this.minicartLink = function () {
-    return driver.findElement(By.css('.minicart-link'));
+    return driver.findElement(By.css('.minicart-link')).click();
   }
 
   this.cartQuantity = function () {
@@ -85,7 +85,7 @@ var BasePage = function () {
   }
 
   this.newsletterSignupSubmitButton = function () {
-    return driver.findElement(By.css('.subscribe-email'));
+    return driver.findElement(By.css('.subscribe-email')).click();
   }
 
 };
