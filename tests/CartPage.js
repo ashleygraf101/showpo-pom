@@ -5,13 +5,14 @@
 * @author Ashley Graf
 */
 
-var BasePage = require('../lib/BasePage');
+var BasePage = require('../BasePage');
 var { describe, it, after, before } = require("selenium-webdriver/testing"),
   assert = require("assert");
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 var should = chai.should();
-var Cart = require("../lib/pages/CartLocators");
+var Cart = require("../pages/CartLocators");
+var Catalog = require("../pages/CatalogPage");
 chai.use(chaiAsPromised);
 var cart_page;
 
@@ -20,7 +21,9 @@ describe("Cart Test Suite", function () {
 
 	beforeEach(function () {
 		cart_page = new Cart();
-		// call the auth setup function
+		catalogPage = new Catalog();
+		catalogPage.goToUrl("https://showpo.com/dresses/");
+		catalogPage.AddFirstAvailableSizeToCart();
 		cart_page.goToUrl("https://www.showpo.com/cart/");
 	});
 
