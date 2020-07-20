@@ -11,7 +11,7 @@ var { describe, it, after, before } = require("selenium-webdriver/testing"),
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 var should = chai.should();
-var Cart = require("../pages/CartLocators");
+var Cart = require("../pages/CartPage");
 var Catalog = require("../pages/CatalogPage");
 chai.use(chaiAsPromised);
 var cart_page;
@@ -25,6 +25,7 @@ describe("Cart Test Suite", function () {
 		catalogPage.goToUrl("https://showpo.com/dresses/");
 		catalogPage.AddFirstAvailableSizeToCart();
 		cart_page.goToUrl("https://www.showpo.com/cart/");
+		catalogPage.cartQuantity().should.eventually.have.length.above(0);
 	});
 
 
