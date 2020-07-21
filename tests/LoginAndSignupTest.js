@@ -1,6 +1,6 @@
 /** 
 *
-* Account page test file
+* Login & signup tests file
 *
 * @author Ashley Graf
 */
