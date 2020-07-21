@@ -27,8 +27,6 @@ describe("Cart Test Suite", function () {
 		catalogPage.AddFirstAvailableSizeToCart();
 		catalogPage.cartQuantity().should.eventually.have.length(1);
 		catalogPage.minicartLink();
-		
-		minicartPage.viewCart();
 	});
 
 
