@@ -73,7 +73,7 @@ var BasePage = function () {
   }
 
   this.cartQuantity = function () {
-    return driver.findElement(By.css('span.minicart-quantity'));
+    return driver.findElement(By.css('span.minicart-quantity')).getText();
   }
 
   this.currencyOptions = function () {
