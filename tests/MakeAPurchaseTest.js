@@ -13,19 +13,22 @@ var chaiAsPromised = require("chai-as-promised");
 var should = chai.should();
 var Cart = require("../pages/CartPage");
 var Catalog = require("../pages/CatalogPage");
+var MiniCart = require("../pages/MiniCartPage");
 chai.use(chaiAsPromised);
-var cart_page;
 
 describe("Cart Test Suite", function () {
 	time.timeout(7000);
 
 	beforeEach(function () {
-		cart_page = new Cart();
+		cartpage = new Cart();
 		catalogPage = new Catalog();
+		minicartPage = new MiniCart();
 		catalogPage.goToUrl("https://showpo.com/dresses/");
 		catalogPage.AddFirstAvailableSizeToCart();
-		cart_page.goToUrl("https://www.showpo.com/cart/");
-		catalogPage.cartQuantity().should.eventually.have.length.above(0);
+		catalogPage.cartQuantity().should.eventually.have.length(1);
+		catalogPage.minicartLink();
+		
+		minicartPage.viewCart();
 	});
 
 
